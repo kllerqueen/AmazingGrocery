@@ -11,7 +11,7 @@
                 <p class="text-black">Log In</p>
             </a>
     
-            <a href="/register" class="text-decoration-none">
+            <a href="/register/en" class="text-decoration-none">
                 <p class="text-black">Register</p>
             </a>
         </div>

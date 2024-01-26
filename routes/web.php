@@ -5,6 +5,7 @@ use App\Http\Controllers\ItemController;
 use App\Http\Controllers\OrderController;
 use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,13 @@ Route::get('/', function () {
     return view('guest.landing');
 })->name('landing');
 
-Route::get('/register', function() {
+Route::get('/register/en', function() {
+    App::setLocale('en');
+    return view('guest.register');
+});
+
+Route::get('/register/id', function() {
+    App::setLocale('id');
     return view('guest.register');
 });
 
